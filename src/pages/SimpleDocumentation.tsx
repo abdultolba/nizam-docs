@@ -105,9 +105,9 @@ const SimpleDocumentation: React.FC = () => {
             <ReactMarkdown
               remarkPlugins={[
                 remarkGfm,
-                remarkSlug,
+                remarkSlug as any,
                 [
-                  remarkAutolinkHeadings,
+                  remarkAutolinkHeadings as any,
                   {
                     behavior: "wrap",
                     linkProperties: {
@@ -276,7 +276,7 @@ const SimpleDocumentation: React.FC = () => {
                     // Replace any visible backticks in regular text
                     const processedText = children.replace(
                       /`([^`\s][^`]*?[^`\s]?)`/g,
-                      (match, content) => {
+                      (_match, content) => {
                         return content; // Remove the backticks, keep the content
                       }
                     );
