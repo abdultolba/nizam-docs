@@ -15,7 +15,7 @@ function App() {
   }, []);
 
   return (
-    <Router basename="/nizam_website">
+    <Router basename="/nizam-docs">
       <ScrollToTop />
       <div className="min-h-screen bg-white dark:bg-gray-900 text-gray-900 dark:text-white">
         <Navigation />
