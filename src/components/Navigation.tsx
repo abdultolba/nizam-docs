@@ -2,8 +2,7 @@ import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X, Github } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
-// import nizamLogo from '/nizam-logo.svg';
-import nizamLogoWhite from "/nizam_logo_white.svg";
+import nizamLogoWhite from "../assets/nizam_logo_white.svg";
 
 export const Navigation: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
