@@ -1,0 +1,96 @@
+/* Anchor link styling for dark theme */
+.anchor-link {
+  text-decoration: none !important;
+  color: inherit !important;
+  position: relative;
+}
+
+.anchor-link:hover {
+  text-decoration: none !important;
+}
+
+/* Smooth scrolling for all anchor links */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Add some offset for fixed navigation */
+h1[id], h2[id], h3[id], h4[id], h5[id], h6[id] {
+  scroll-margin-top: 8rem;
+}
+
+/* Dark theme hover effect for headings with anchor links */
+h1:hover .anchor-link::after,
+h2:hover .anchor-link::after,
+h3:hover .anchor-link::after,
+h4:hover .anchor-link::after,
+h5:hover .anchor-link::after,
+h6:hover .anchor-link::after {
+  content: ' #';
+  color: #00FFFF;
+  font-weight: normal;
+  opacity: 0.8;
+  margin-left: 0.5rem;
+}
+
+/* Better table spacing */
+.markdown-body table {
+  margin-bottom: 1.5rem;
+}
+
+.markdown-body table td,
+.markdown-body table th {
+  padding: 0.75rem 1rem;
+}
+
+/* Better nested list styling */
+.markdown-body ul ul,
+.markdown-body ul ol,
+.markdown-body ol ul,
+.markdown-body ol ol {
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+  margin-left: 1.5rem;
+}
+
+/* Code block improvements */
+.markdown-body pre {
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
+/* Blockquote improvements */
+.markdown-body blockquote {
+  border-radius: 0.375rem;
+  font-style: italic;
+}
+
+/* Hide backticks from pseudo-elements */
+code::before,
+code::after {
+  content: '' !important;
+}
+
+/* Ensure no content is added to inline code */
+.prose code::before,
+.prose code::after {
+  content: '' !important;
+}
+
+.prose-invert code::before,
+.prose-invert code::after {
+  content: '' !important;
+}
+
+/* Remove any backticks added by typography plugins */
+.markdown-body code::before,
+.markdown-body code::after {
+  content: '' !important;
+}
+
+/* Generic catch-all for any pseudo-element backticks */
+*[class*="code"]::before,
+*[class*="code"]::after {
+  content: '' !important;
+}

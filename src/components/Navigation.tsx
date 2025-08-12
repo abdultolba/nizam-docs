@@ -13,6 +13,7 @@ export const Navigation: React.FC = () => {
     { name: "Getting Started", path: "/docs/getting-started" },
     { name: "CLI Reference", path: "/docs/cli" },
     { name: "Features", path: "/docs/features" },
+    { name: "Documentation", path: "/docs" },
   ];
 
   const isActive = (path: string) => location.pathname === path;

@@ -4,6 +4,7 @@ import { Home } from "./pages/Home";
 import { GettingStarted } from "./pages/GettingStarted";
 import { CLI } from "./pages/CLI";
 import { Features } from "./pages/Features";
+import SimpleDocumentation from './pages/SimpleDocumentation.tsx';
 import { Navigation } from "./components/Navigation";
 import { Footer } from "./components/Footer";
 import { ScrollToTop } from "./components/ScrollToTop";
@@ -25,6 +26,7 @@ function App() {
             <Route path="/docs/getting-started" element={<GettingStarted />} />
             <Route path="/docs/cli" element={<CLI />} />
             <Route path="/docs/features" element={<Features />} />
+          <Route path="/docs" element={<SimpleDocumentation />} />
           </Routes>
         </main>
         <Footer />
