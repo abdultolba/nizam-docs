@@ -487,6 +487,7 @@ export const CLI = () => {
         "nizam doctor --fix",
         "nizam doctor --json",
         "nizam doctor --skip net.mtu,disk.free",
+        "nizam doctor --list-checks",
       ],
       options: [
         {
@@ -497,6 +498,10 @@ export const CLI = () => {
         {
           flag: "--skip [checks]",
           description: "Skip specific checks by name",
+        },
+        {
+          flag: "--list-checks",
+          description: "List all available checks and their descriptions",
         },
       ],
     },
